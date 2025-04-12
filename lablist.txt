@@ -1,0 +1,1269 @@
+1.	Develop a HTML document to i) Display text with Bullets/Numbers -Using lists
+ii)To display the table format data.
+
+<html >
+<head>
+<title>HTML List and Table Example</title>
+</head>
+<body>
+<h1>HTML Lists Example</h1>
+<h2>Unordered List (Bullets)</h2>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+<li>Item 4</li>
+</ul>
+<h2>Ordered List (Numbers)</h2>
+<ol>
+<li>First step</li>
+<li>Second step</li>
+<li>Third step</li>
+<li>Fourth step</li>
+</ol>
+</body>
+</html>
+ 
+2.	Write names of several countries in a paragraph and store it as an HTML document, world.HTML. Each country name must be a hot text. When you click India(for example), it must open india.HTML and it should provide a brief introduction about India.
+
+
+Map.html:
+
+
+<html>
+<head>
+<title> world map </title>
+</head>
+<body>
+<center>
+<h1>COUNTRIES</h1>
+<img src="C:\Users\MSC2\Desktop\PGD009\world2png.JPG" alt="Workplace" usemap="#workmap" width="90%"height="600">
+<map name="workmap">
+<area shape="circle" coords="875,230,27" alt="india" href="india.html">
+<area shape="circle" coords="930,370,20" alt="australia" href=”australia.html">
+<area shape="circle" coords="270,200,27" alt="america " href="america.html">
+</map>
+</center>
+</body>
+</html>
+India.html:
+<html>
+<head>
+ 
+<title>India</title>
+</head>
+<body>
+<center><h1>INDIA</h1></center>
+<center>
+<p>Tourism in India is 4.6% of the country's gross domestic product (GDP). .</p>
+<h1>AGRA<h1>
+</center>
+</body>
+</html>
+Australia.html:
+<html>
+<head>
+<title>India</title>
+</head>
+<body>
+<center><h1>AUSTRALIA</h1></center>
+</body>
+</html>
+America.html:
+<html>
+<head>
+<title>India</title>
+</head>
+<body>
+<center><h1>AMERICA</h1></center>
+</body></html>
+ 
+3.	Develop a complete web page using frames and framesets which gives the information about a Hospital using HTML.
+Frame.html:
+<html>
+
+<head>
+
+<title>Hospital Information</title>
+
+</head>
+
+<frameset rows="200,450,*" >
+
+<frameset cols="*">
+
+<frame src="header.html" name="header" target="content"></frame>
+
+</frameset>
+
+<frameset cols="200,*">
+
+<frame src="navigation.html" name="navigation" target="content"></frame>
+
+<frame src="content.html" name="content" target="content"></frame>
+
+</frameset>
+
+<frame></frame>
+
+</frameset></html>
+
+Header.html:
+<html >
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>header</title>
+<style> h1{
+color: cyan;
+ 
+font-size:xx-large;
+}
+</style>
+</head>
+<body>
+<h1><center>Sandy Hospital</center></h1>
+</body></html>
+Navigation.html:
+<html>
+
+<head>
+
+<title>Menu</title>
+
+<style> ul{
+margin: 10;
+
+padding: 0%; background-color: azure;
+}
+
+li a{
+
+color: chocolate; font-size: 20px; padding: 20%; display: block;
+}
+
+li a:hover{
+
+background-color: whitesmoke;
+ 
+display: block;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Hospital Menu</h2>
+
+<ul>
+
+<li><a href="home.html" target="content">Home</a></li>
+
+<li><a href="aboutus.html" target="content">About Us</a></li>
+
+<li><a href="services.html" target="content">Services</a></li>
+
+<li><a href="contact.html" target="content">Contact</a></li>
+
+</ul></body></html>
+
+Content.html:
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact</title>
+
+<style>
+
+.blur-back{ margin: 0%;
+padding: 0%;
+ 
+height: 100vh; width: 100vw; filter: blur(50px);
+background-image: url(contact.jpeg); background-position: center; background-size: cover;
+background-repeat: no-repeat; position: relative;
+}
+
+h2{
+
+text-align: center;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="blur-back"></div>
+
+<div class="text">
+
+<h2>📍240,Pandikovil near,Bypass road,Madurai</h2>
+
+<h2>☎️  452-245678</h2>
+
+<h2>📩sandyhospital@gmail.com</h2></div></body></html>
+ 
+4.	Develop a website for your college using advanced tags of HTML
+College.html:
+<html >
+<head>
+<title>My College</title>
+<style> body {
+font-family: Arial; margin: 0;
+}
+header, nav, footer { background-color: #34495e; color: white;
+padding: 15px; text-align: center;
+}
+nav a { color: white;
+text-decoration: none; margin: 0 15px;
+}
+iframe { width: 100%; height: 500px; border: none;
+}
+</style>
+</head>
+<body>
+ 
+
+<header>
+<h1>Welcome to My College</h1>
+</header>
+<nav>
+<a href="department.html" target="contentFrame">Departments</a>
+<a href="admission.html" target="contentFrame">Admissions</a>
+<a href="events.html" target="contentFrame">Events</a>
+<a href="contact.html" target="contentFrame">Contact</a>
+</nav>
+<iframe name="contentFrame" src="department.html"></iframe>
+<footer>
+<p>&copy; 2025 My College. All rights reserved.</p>
+</footer></body>
+</html>
+Department.html:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { font-family: Arial; padding: 20px; }
+</style>
+</head>
+<body>
+<h2>Our Departments</h2>
+<ul>
+<li>Computer Science</li>
+<li>Electronics</li>
+<li>Mechanical</li>
+ 
+<li>Civil</li>
+<li>Business Administration</li>
+</ul>
+</body>
+</html>
+Admissions.html:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { font-family: Arial; padding: 20px; }
+</style>
+</head>
+<body>
+<h2>Admission Details</h2>
+<p>Admissions are open for the academic year 2025. Apply online or visit our campus.</p>
+</body>
+</html>
+Events.html:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { font-family: Arial; padding: 20px; }
+</style>
+</head>
+<body>
+<h2>Upcoming Events</h2>
+<ul>
+<li>April 20: Annual Tech Fest</li>
+ 
+<li>May 10: Cultural Day</li>
+<li>June 1: Alumni Meet</li>
+</ul>
+</body>
+</html>
+Contact.html:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { font-family: Arial; padding: 20px; }
+</style>
+</head>
+<body>
+<h2>Contact Us</h2>
+<p>Email: info@mycollege.edu</p>
+<p>Phone: +91 12345 67890</p>
+<p>Address: My College, Main Road, Chennai</p>
+</body>
+</html>
+ 
+
+5.	Write a HTML document to print your bio-Data in a neat format using CSS.
+
+
+<html>
+<head>
+<title>Biodata Form</title>
+<style> body {
+font-family: Arial, sans-serif;
+}
+form { width: 50%;
+margin: 20px auto; padding: 20px;
+border: 1px solid #ccc; border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label { display: block;
+margin-bottom: 10px;
+}
+input[type="text"], input[type="email"], input[type="number"] { width: 100%;
+height: 40px;
+margin-bottom: 20px; padding: 10px;
+border: 1px solid #ccc;
+}
+ 
+input[type="submit"] { width: 100%;
+height: 40px;
+background-color: #4CAF50; color: #fff;
+padding: 10px; border: none; border-radius: 10px; cursor: pointer;
+}
+input[type="submit"]:hover { background-color: #3e8e41;
+}
+table { width: 50%;
+margin: 20px auto; border-collapse: collapse;
+}
+th, td {
+border: 1px solid #ccc; padding: 10px;
+text-align: left;
+}
+th {
+background-color: #f0f0f0;
+}
+#display-biodata { display: none;
+}
+ 
+</style>
+</head>
+<body>
+<form id="biodata-form">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+<label for="fathersname">Father's Name:</label>
+<input type="text" id="fathersname" name="fathersname" required>
+<label for="gender">Gender:</label>
+<input type="radio" id="male" name="gender" value="male"> Male
+<input type="radio" id="female" name="gender" value="female"> Female
+<input type="radio" id="other" name="gender" value="other"> Others
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<label for="phone">Phone:</label>
+<input type="number" id="phone" name="phone" required>
+<label for="address">Address:</label>
+<input type="text" id="address" name="address" required>
+<input type="submit" value="Submit">
+</form>
+<div id="display-biodata">
+<table>
+<tr>
+<th>Name:</th>
+<td id="display-name"></td>
+</tr>
+<tr>
+<th>Father's Name:</th>
+<td id="display-fathersname"></td>
+ 
+</tr>
+<tr>
+<th>Gender:</th>
+<td id="display-gender"></td>
+</tr>
+<tr>
+<th>Email:</th>
+<td id="display-email"></td>
+</tr>
+<tr>
+<th>Phone:</th>
+<td id="display-phone"></td>
+</tr>
+<tr>
+<th>Address:</th>
+<td id="display-address"></td>
+</tr>
+</table>
+</div>
+<script>
+const form = document.getElementById('biodata-form');
+const displayName = document.getElementById('display-name');
+const displayFathersName = document.getElementById('display-fathersname'); const displayGender = document.getElementById('display-gender');
+const displayEmail = document.getElementById('display-email'); const displayPhone = document.getElementById('display-phone'); const displayAddress = document.getElementById('display-address'); const displayBiodata = document.getElementById('display-biodata');
+ 
+form.addEventListener('submit', (e) => { e.preventDefault();
+
+const name = document.getElementById('name').value;
+const fathersname = document.getElementById('fathersname').value;
+const gender = document.querySelector('input[name="gender"]:checked').value; const email = document.getElementById('email').value;
+const phone = document.getElementById('phone').value; const address = document.getElementById('address').value;
+
+displayName.innerHTML = name; displayFathersName.innerHTML = fathersname; displayGender.innerHTML = gender; displayEmail.innerHTML = email; displayPhone.innerHTML = phone; displayAddress.innerHTML = address;
+
+displayBiodata.style.display = 'block'; // Show the biodata table
+});
+</script>
+</body>
+</html>
+ 
+6.	Write HTML for demonstration of CSS:Embedded style sheets,External style sheets and Inline styles.
+Inline css:
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inline Style Example</title>
+</head>
+<body>
+
+
+<h2 style="color: red; text-align: center;">This is an Inline Styled Heading</h2>
+<p style="font-size: 18px; color: green;">This paragraph is styled with inline CSS.</p>
+
+
+</body>
+</html>
+
+
+Internal css:
+<!DOCTYPE html>
+<html>
+<head>
+<title>Internal CSS Example</title>
+<style> h2 {
+color: blue;
+text-align: center;
+}
+p {
+font-size: 18px; color: purple;
+ 
+}
+</style>
+</head>
+<body>
+
+
+<h2>This is an Internally Styled Heading</h2>
+<p>This paragraph is styled using internal (embedded) CSS.</p>
+
+
+</body>
+</html>
+External css:
+External.html:
+<!DOCTYPE html>
+<html>
+<head>
+<title>External CSS Example</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<h2>This is a Heading Styled with External CSS</h2>
+<p>This paragraph is styled using an external stylesheet.</p>
+
+
+</body>
+</html>
+Style.css :
+/* style.css */ h2 {
+color: white;
+ 
+background-color: #34495e; text-align: center;
+padding: 10px;
+}
+p {
+color: #2c3e50; font-size: 18px;
+}
+ 
+7.	Develop JavaScript program to display a registration form foe an inter- collegiate function.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inter College Meet Registration</title>
+<style> #container { width: 50%;
+margin: 20px auto; padding: 20px;
+border: 1px solid #ccc; border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form { display: flex;
+flex-direction: column;
+}
+input, select { width: 100%; height: 40px;
+margin-bottom: 20px; padding: 10px;
+border: 1px solid #ccc;
+}
+button {
+ 
+width: 100%; height: 40px;
+background-color: #4CAF50; color: #fff;
+padding: 10px; border: none; border-radius: 10px; cursor: pointer;
+}
+button:hover {
+background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+<div id="container">
+<h2>Inter College Meet Registration</h2>
+<h3>Date: 10th March 2024</h3>
+<h3>Time: 9:00 AM - 5:00 PM</h3>
+<form id="registration-form">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+<label for="college">College Name:</label>
+<input type="text" id="college" name="college" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<label for="phone">Phone Number:</label>
+<input type="number" id="phone" name="phone" required>
+<label for="events">Events:</label>
+ 
+<select id="events" name="events" required>
+<option value="">Select Event</option>
+<option value="Sports">Sports</option>
+<option value="Cultural">Cultural</option>
+<option value="Technical">Technical</option>
+</select>
+<button type="submit">Register</button>
+</form>
+<div id="registration-status"></div>
+</div>
+<script>
+const form = document.getElementById('registration-form');
+const registrationStatus = document.getElementById('registration-status'); form.addEventListener('submit', (e) => {
+e.preventDefault();
+const name = document.getElementById('name').value; const college = document.getElementById('college').value; const email = document.getElementById('email').value; const phone = document.getElementById('phone').value; const events = document.getElementById('events').value;
+registrationStatus.innerHTML = `Registration successful!<br>Name: ${name}<br>College:
+${college}<br>Email: ${email}<br>Phone: ${phone}<br>Events: ${events}`;
+});
+</script>
+</body>
+</html>
+ 
+8.	Write a JavaScript program to validate user login page.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>User Login Validation</title>
+<style> body {
+font-family: Arial, sans-serif; padding: 20px;
+background: #f4f4f4;
+}
+form { background: #fff; padding: 20px; width: 300px; margin: auto; border-radius: 8px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+input { width: 100%; padding: 8px;
+margin-top: 5px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;
+}
+.error {
+ 
+color: red;
+font-size: 0.9em;
+}
+.success { color: green; font-size: 1em;
+text-align: center; margin-top: 10px;
+}
+button { width: 100%; padding: 10px;
+background: #28a745; color: white;
+border: none; border-radius: 4px; cursor: pointer;
+}
+button:hover { background: #218838;
+}
+</style>
+</head>
+<body>
+
+
+<form id="loginForm">
+<h2>Login</h2>
+<label for="username">Username</label>
+<input type="text" id="username" />
+ 
+<div id="usernameError" class="error"></div>
+
+
+<label for="password">Password</label>
+<input type="password" id="password" />
+<div id="passwordError" class="error"></div>
+
+
+<button type="submit">Login</button>
+<div id="loginMessage" class="success"></div>
+</form>
+
+
+<script>
+document.getElementById('loginForm').addEventListener('submit', function (e) { e.preventDefault();
+
+// Input values
+const username = document.getElementById('username').value.trim(); const password = document.getElementById('password').value.trim();
+
+// Clear previous messages document.getElementById('usernameError').textContent = ''; document.getElementById('passwordError').textContent = ''; document.getElementById('loginMessage').textContent = '';
+
+let valid = true;
+
+
+// Username validation (non-empty & alphanumeric) const usernameRegex = /^[a-zA-Z0-9]+$/;
+if (username === '') {
+document.getElementById('usernameError').textContent = 'Username is required.';
+ 
+valid = false;
+} else if (!usernameRegex.test(username)) {
+document.getElementById('usernameError').textContent = 'Username must be alphanumeric only.';
+valid = false;
+}
+
+
+// Password validation (non-empty & min length 6) if (password === '') {
+document.getElementById('passwordError').textContent = 'Password is required.'; valid = false;
+} else if (password.length < 6) {
+document.getElementById('passwordError').textContent = 'Password must be at least 6 characters.';
+valid = false;
+}
+
+
+// If all validations pass if (valid) {
+document.getElementById('loginMessage').textContent = 'Login successful!';
+// Here you can add logic to send login data to your server
+}
+});
+</script>
+
+
+</body>
+</html>
+ 
+9.	Write a JavaScript program to calculater using math function.
+Math_properties:
+<html>
+<head>
+<title>Java Script - Math Object</title>
+<script language="javascript"> function dispprop()
+{
+var a; for(i=0;i<document.prop.optprop.length;i++)
+{
+if(document.prop.optprop[i].checked) a=document.prop.optprop[i].value;
+}
+switch(a)
+{
+case "E": txtprop.value=Math.E; break;
+case "LN2" : txtprop.value=Math.LN2; break;
+case "LN10" : txtprop.value=Math.LN10; break;
+case "LOG2E" : txtprop.value=Math.LOG2E; break;
+case "LOG10E" :
+ 
+txtprop.value=Math.LOG10E; break;
+case "PI" :
+txtprop.value=Math.PI; break;
+case "SQRT1_2" : txtprop.value=Math.SQRT1_2; break;
+case "SQRT2" : txtprop.value=Math.SQRT2; break;
+}
+}
+window.defaultStatus="Math Object";
+</script>
+</head>
+<body>
+<center>
+<h2>Math Object</h2>
+<table>
+<tr bgcolor="blue" >
+<th><font color="white">Properties</font></th>
+</tr>
+<tr>
+<td bgcolor="yellow">
+<input type="text" id="txtprop">
+<form name="prop">
+<input type="radio" name="optprop" value="E">E<br>
+<input type="radio" name="optprop" value="LN2">LN2<br>
+ 
+<input type="radio" name="optprop" value="LN10">LN10<br>
+<input type="radio" name="optprop" value="LOG2E">LOG2E<br>
+<input type="radio" name="optprop" value="LOG10E">LOG10E<br>
+<input type="radio" name="optprop" value="PI">PI<br>
+<input type="radio" name="optprop" value="SQRT1_2">SQRT1_2<br>
+<input type="radio" name="optprop" value="SQRT2">SQRT2<br>
+<input type="button" onclick="dispprop()" value="Submit">
+</form>
+</table>
+</center>
+</body>
+</html>
+ 
+10.	Write a PHP script using nester for loop that creates a chessboard.
+<html>
+<head>
+<title>php</title>
+</head>
+<body><center>
+<h1>chess board</h1>
+<table width="500px" cellspacing="0px" cellpadding="0px" border="1">
+<?php
+for($row=1; $row<=8; $row++)
+{
+echo"<tr>";
+for($column=1; $column<=8; $column++)
+{
+$total=$row+$column; if($total%2==0)
+{
+echo"<td height='55px' width='4px' bgcolor='black'>";
+}
+else
+{
+echo"<td height='55px' width='4px' bgcolor='white'>";
+}	}
+echo"</tr>";
+}
+?> </center> </body> </html>
+ 
+11.	Write a program to accept two numbers n1 & n2 using HTML form and display the prime numbers between n1 & n2 using PHP.
+<html>
+<head>
+<title>php</title>
+</head>
+<body>
+<center><h2>Prime number Generation</h2></center>
+<form method="post">
+<label for="n1">Enter 1st number(n1):</label>
+<input type="number" name="n1" id="n1" required> <br>
+<label for="n2">Enter 2nd number(n2):</label>
+<input type="number" name="n2" id="n2" required> <br>
+<input type=submit value="submit">
+</form>
+<?php
+function isprime($num)
+{
+if($num<2)
+{
+return false;
+}
+for($i=2; $i<=sqrt($num); $i++)
+{
+if($num % $i==0)
+{
+return false;
+ 
+}}
+return true;
+} if($_SERVER['REQUEST_METHOD']=='POST')
+{
+$n1=intval($_POST['n1']);
+$n2=intval($_POST['n2']); if($n1>$n2)
+{
+$temp=$n1;
+$n1=$n2;
+$n2=$temp;
+}
+echo"<h1> prime number between $n1 and $n2 </h1>"; echo"<ul>";
+for($i=$n1; $i<=$n2; $i++)
+{
+if(isprime($i))
+{
+echo"<li>$i</li>";
+}
+}
+echo"</ul>";
+}
+?>
+</body>
+</html>
+ 
+12.	Create a PHP script to display the capital & country name from the given array, sort the list by the name of the country.
+<html>
+<head>
+<title>Countries and Capitals</title>
+</head>
+<body><center>
+<h2>Countries and Capitals Sorted by Country Name</h2>
+<?php
+$countries_and_capitals = [ "Canada" => "Ottawa", "Germany" => "Berlin", "France" => "Paris", "Japan" => "Tokyo", "Australia" => "Canberra", "India" => "New Delhi",
+"United Kingdom" => "London", "Brazil" => "Brasília",
+"Mexico" => "Mexico City", "Italy" => "Rome"
+];
+ksort($countries_and_capitals);
+echo "<table border='1' cellpadding='5' cellspacing='0'>"; echo "<tr><th>Country</th><th>Capital</th></tr>"; foreach ($countries_and_capitals as $country => $capital) { echo "<tr><td>$country</td><td>$capital</td></tr>";
+}
+ 
+
+echo "</table>";
+?>
+</center>
+</body>
+</html>
+ 
+13.	Using HTML form accept customer details like (name, city, pincode, phone number, Email address)and validate the data and display appropriate message for violation using PHP.(Example : name is mandatory field, pincode must be 6 digits).
+<?php
+$nameError = $cityError = $pincodeError = $phoneError = $emailError = "";
+
+$isValid = true;
+if ($_SERVER["REQUEST_METHOD"] == "POST")
+{
+
+if (empty($_POST["name"])) {
+$nameError = "Name is required.";
+$isValid = false;
+}
+if (empty($_POST["city"])) {
+$cityError = "City is required.";
+$isValid = false;
+
+}
+if (empty($_POST["pincode"])) {
+$pincodeError = "Pincode is required.";
+$isValid = false;
+}
+elseif (!preg_match("/^\d{6}$/", $_POST["pincode"])){
+
+$pincodeError = "Pincode must be 6 digits.";
+$isValid = false;}
+ 
+if (empty($_POST["phone"])) {
+$phoneError = "Phone number is required.";
+$isValid = false;
+}
+elseif (!preg_match("/^\d{10}$/", $_POST["phone"])) {
+$phoneError = "Phone number must be 10 digits.";
+$isValid = false;
+}
+if (empty($_POST["email"])) {
+$emailError = "Email is required.";
+$isValid = false;
+}
+elseif (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL))
+{
+$emailError = "Invalid email format.";
+$isValid = false;
+}
+if ($isValid){
+echo"<p style='color: green;'> Form submitted successfully!</p>";
+}}
+?>
+<html>
+<head>
+<title>Customer Details Form</title>
+</head>
+<body>
+<center><h2>Customer Details Form</h2></center>
+<form method="post" action="">
+ 
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" value="<?php echo isset($_POST['name']) ? $_POST['name'] : ''; ?>">
+<span style="color:red;"><?php echo $nameError; ?></span><br><br>
+
+
+<label for="city">City:</label>
+<input type="text" id="city" name="city" value="<?php echo isset($_POST['city']) ?
+$_POST['city'] : ''; ?>">
+<span style="color:red;"><?php echo $cityError; ?></span><br><br>
+
+
+<label for="pincode">Pincode:</label>
+<input type="text" id="pincode" name="pincode" value="<?php echo isset($_POST['pincode']) ? $_POST['pincode'] : ''; ?>">
+<span style="color:red;"><?php echo $pincodeError; ?></span><br><br>
+
+
+<label for="phone">Phone Number:</label>
+<input type="text" id="phone" name="phone" value="<?php echo isset($_POST['phone']) ? $_POST['phone'] : ''; ?>">
+<span style="color:red;"><?php echo $phoneError; ?></span><br><br>
+
+
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="email" value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?>">
+<span style="color:red;"><?php echo $emailError; ?></span><br><br>
+
+
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
+ 
+14.	Write a PHP function that check if the string is all lower case.
+<html>
+<head>
+<title>lowercase</title>
+<script>
+function isAllLowerCase(){
+var inputString=document.getElementById("inputString").value; if(inputString===inputString.toLowerCase()){ document.getElementById("result").innerText="The String is all lowercase";	} else{
+document.getElementById("result").innerText="The String is not lowercase";
+}
+}
+</script> </head>
+<body>
+<h2>Check if string is All Lowercase</h2>
+<label for="inputString">Enter a String :</label>
+<input type="text" id="inputString">
+<button onclick="isAllLowerCase()">Check</button>
+<p id="result"></p>
+</body>
+</html>
+ 
+15.	Write a PHP program for user defined functions.
+
+
+<html >
+<head>
+<title>Armstrong Number Checker</title>
+</head>
+<body>
+<h2>Check Armstrong Number</h2>
+<form method="post">
+<label>Enter a Number:</label>
+<input type="number" name="number" required>
+<button type="submit">Check</button>
+</form>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+$num = $_POST["number"]; function isArmstrong($num) {
+$sum = 0;
+$temp = $num;
+$digits = strlen((string)$num); while ($temp > 0) {
+$digit = $temp % 10;
+$sum += pow($digit, $digits);
+$temp = (int)($temp / 10);
+}
+return $sum == $num;
+}
+if (isArmstrong($num)) {
+ 
+echo "<p><strong>$num</strong> is an Armstrong number.</p>";
+} else {
+echo "<p><strong>$num</strong> is not an Armstrong number.</p>";
+}
+}
+?>
+</body>
+</html>
+ 
+16.	Write a PHP program to print personal details using file.
+<html>
+<head>
+<title>Personal details</title>
+</head>
+<body>
+<?php
+$file = 'personal_details.txt'; if (file_exists($file)){
+$details = file_get_contents($file); echo "<h1>Personal Details</h1>";
+echo "<pre>" .htmlspecialchars($details) . "</pre>";
+}
+else {
+echo "Error: The file 'personal_details.txt' was not found.";
+}
+?>
+</body>
+</html>
+ 
+17.	Write a PHP program to perform file operation.
+
+
+<?php
+$errors = ['name' => '', 'city' => ''];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (empty($_POST["name"])){
+$errors['name'] = "Name is required.";
+$x=$_POST["name"];
+$f="sample3.txt";
+$fp=fopen("$f","w");
+fwrite($fp,"name:"); fwrite($fp,$x); fclose($fp);
+}
+if (empty($_POST["city"])){
+$errors['city'] = "City is required.";
+$x=$_POST["city"];
+$f="sample3.txt";
+$fp=fopen("$f","a");
+fwrite($fp," city:"); fwrite($fp,$x); fclose($fp);
+}
+$fp=fopen("$f","r");
+$x=fread($fp,100); fclose($fp); echo"$x";
+ 
+}
+?>
+<html>
+<head>
+<title>Customer Details Form</title>
+</head>
+<body>
+<h2>Customer Details Form</h2>
+<form method="post">
+
+
+<label>Name: <input type="text" name="name" value="<?= $_POST['name'] ?? ''
+?>"></label><br>
+<span style="color:red;"><?= $errors['name'] ?></span><br><br>
+
+
+<label>City: <input type="text" name="city" value="<?= $_POST['city'] ?? ''
+?>"></label><br>
+<span style="color:red;"><?= $errors['city'] ?></span><br><br>
+
+
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
+ 
+18.	Write a PHP program to create a database & table using SQL queries.
+<?php
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="personal";
+$conn = new mysqli($servername, $username, $password, $dbname); if($conn->connect_error){
+die("connection failed: ". $conn->connect_error);
+}
+$message = ""; if($_SERVER['REQUEST_METHOD'] == "POST") {
+$name = $_POST['name'];
+$email = $_POST['email'];
+$age = $_POST['age'];
+$Address = $_POST['address'];
+$Phone = $_POST['phone'];
+$sql = "INSERT INTO details(name, email, age, address, phone) VALUES ('$name', '$email', '$age', '$Address', '$Phone')";
+if($conn->query($sql) === TRUE){
+$message = "Personal details saved successfully";
+} else {
+$message = "Error: " . $sql . "<br>" . $conn->error;
+}
+}
+if(!empty($message)){ echo "<p>$message</p>";
+} ?>
+ 
+19.	Write a PHP program to insert, delete, update & select data from database using MYSQL.
+
+
+<html>
+<head>
+<title>PHP and MySQL Demo</title>
+</head>
+<body>
+<div class="container">
+<h2 class="mt-7" style="text-align:center;background-color:lavender;">PHP and MySQL Demo</h2>
+
+
+<div class="mt-4">
+<h3>Insert Data</h3>
+<form method="post" action="">
+<div class="form-group">
+<label for="name">Name:</label>
+<input type="text" class="form-control" id="name" name="name" required>
+</div>
+<div class="form-group">
+<label for="age">Age:</label>
+<input type="text" class="form-control" id="age" name="age" required>
+</div>
+<button type="submit" class="btnbtn-primary" name="insert">Insert</button>
+</form>
+</div>
+ 
+<div class="mt-4">
+<h3>Delete Data</h3>
+<form method="post" action="">
+<div class="form-group">
+<label for="id_delete">ID to Delete:</label>
+<input type="text" class="form-control" id="id_delete" name="id" required>
+</div>
+<button type="submit" class="btnbtn-danger" name="delete">Delete</button>
+</form>
+</div>
+
+
+<div class="mt-4">
+<h3>Update Data</h3>
+<form method="post" action="">
+<div class="form-group">
+<label for="id_update">ID to Update:</label>
+<input type="text" class="form-control" id="id_update" name="id" required>
+</div>
+<div class="form-group">
+<label for="new_name">New Name:</label>
+<input type="text" class="form-control" id="new_name" name="new_name" required>
+</div>
+
+
+<div class="form-group">
+<label for="new_age">New Age:</label>
+<input type="text" class="form-control" id="new_age" name="new_age" required>
+</div>
+ 
+<button type="submit" class="btnbtn-warning" name="update">Update</button>
+</form>
+</div>
+
+
+<div class="mt-4">
+<h3>Display Data</h3>
+<form method="post" action="">
+<button type="submit" class="btnbtn-info" name="display">Display</button>
+</form>
+</div>
+
+
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "myDatabase";
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+
+if ($conn->connect_error) {
+die("Connection failed: " . $conn->connect_error);
+}
+
+
+if (isset($_POST['insert'])) {
+$name = $_POST['name'];
+$age = $_POST['age'];
+$sql = "INSERT INTO myTable (name, age) VALUES ('$name', '$age')";
+ 
+
+if ($conn->query($sql) === TRUE) {
+echo "<div class='alert alert-success mt-4'>New record created successfully</div>";
+}
+else {
+echo "<div class='alert alert-danger mt-4'>Error: " . $sql . "<br>" . $conn-> error . "</div>";
+}
+}
+
+
+if (isset($_POST['delete'])) {
+$id = $_POST['id'];
+$sql = "DELETE FROM myTable WHERE id='$id'"; if ($conn->query($sql) === TRUE) {
+echo "<div class='alert alert-success mt-4'>Record deleted successfully</div>";
+} else {
+echo "<div class='alert alert-danger mt-4'>Error: " . $conn->error . "</div>";
+}
+}
+
+
+if (isset($_POST['update'])) {
+$id = $_POST['id'];
+$new_name = $_POST['new_name'];
+$new_age = $_POST['new_age'];
+$sql = "UPDATE myTable SET name='$new_name', age='$new_age' WHERE id='$id'";
+ 
+
+if ($conn->query($sql) === TRUE) {
+echo "<div class='alert alert-success mt-4'>Record updated successfully</div>";
+}
+else {
+echo "<div class='alert alert-danger mt-4'>Error updating record: " . $conn-
+>error . "</div>";
+}
+}
+
+
+if (isset($_POST['display'])) {
+$sql = "SELECT id, name, age FROM myTable";
+$result = $conn->query($sql); if ($result->num_rows> 0) {
+echo "<div class='mt-4'><h3>Data:</h3><table class='table table-
+bordered'><thead><tr><th>ID</th><th>Name</th><th>Age</th></tr></thead><tbod y>";
+while($row = $result->fetch_assoc()) {
+echo "<tr><td>" . $row["id"]. "</td><td>" . $row["name"]. "</td><td>" .
+$row["age"]. "</td></tr>";
+}
+echo "</tbody></table></div>";
+} else {
+echo "<div class='alert alert-info mt-4'>0 results</div>";
+}
+}
+ 
+
+$conn->close();
+?>
+</div>
+</body>
+</html>
+ 
+20.	Write a program to implementing XML document for customer details.
+<customers>
+<customer>
+<id>1</id>
+<name>Soundharya</name>
+<email>soundharya@gmail.com</email>
+<phone>8967452310</phone>
+<address>
+<street>Arappalayam</street>
+<city>Madurai</city>
+<state>Tamilnadu</state>
+<zip>625016</zip>
+</address>
+</customer>
+<customer>
+<id>2</id>
+<name>Thamarai</name>
+<email>thamarai@gmail.com</email>
+<phone>9876543210</phone>
+<address>
+<street>Jaihindpuram</street>
+<city>Madurai</city>
+<state>Tamilnadu</state>
+<zip>625011</zip>
+</address>
+</customer>
+</customers>
+ 
+21.	Write a XML person information and access second student data using DOM.
+
+
+Stu.py
+
+
+from xml.dom import minidom xml_file = "student.xml"
+doc = minidom.parse(xml_file)
+students = doc.getElementsByTagName("student")
+
+
+if len(students) >= 2:
+second_student = students[0]
+student_id = second_student.getElementsByTagName("id")[0].firstChild.nodeValue
+student_name = second_student.getElementsByTagName("name")[0].firstChild.nodeValue
+student_age = second_student.getElementsByTagName("age")[0].firstChild.nodeValue
+student_score = second_student.getElementsByTagName("grade")[0].firstChild.nodeValue
+
+
+print("Student id:", student_id) print("Student name:", student_name) print("Student age:", student_age) print("Student score:", student_score) else:
+print("No second student")
+ 
+Stu.XML
+<students>
+<student>
+<id>1</id>
+<name>John</name>
+<age>25</age>
+<grade>A</grade>
+</student>
+<student>
+<id>2</id>
+<name>kumar</name>
+<age>22</age>
+<grade>B</grade>
+</student>
+</students>
